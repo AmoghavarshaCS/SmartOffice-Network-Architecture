@@ -1,124 +1,75 @@
-# 🌐 Enterprise Network Infrastructure Simulation
+# Enterprise Network Infrastructure Simulation
+
+A structured LAN simulation of a real-world office environment, built in **Cisco Packet Tracer**. The goal was to model how departments in an actual organization are segmented, connected, and made to communicate — not just get packets from A to B.
 
 <div align="center">
-
-![Cisco](https://img.shields.io/badge/Cisco-Packet%20Tracer-blue?style=for-the-badge&logo=cisco)
-![Networking](https://img.shields.io/badge/Enterprise-Network-green?style=for-the-badge)
-![Status](https://img.shields.io/badge/Project-Completed-success?style=for-the-badge)
-![Cybersecurity](https://img.shields.io/badge/Cybersecurity-Networking-red?style=for-the-badge)
-
+  <img src="topology.png" width="900" alt="Network Topology" />
+  <br/>
+  <sub>Full network topology — designed and tested in Cisco Packet Tracer</sub>
 </div>
 
 ---
 
-## 📌 Overview
+## What's being simulated
 
-A real-world enterprise office network simulation built using **Cisco Packet Tracer** to demonstrate structured LAN architecture, departmental segmentation, centralized routing, server integration, and inter-device communication.
+A multi-department office network with centralized routing and a dedicated server room. Each department has its own switch, and all traffic flows through a central router.
 
-This project models a professional office infrastructure environment with multiple departments connected through switches and routers while supporting efficient communication and network scalability.
-
----
-
-# 🖼️ Network Topology
-
-<p align="center">
-  <img src="topology.png" width="900">
-</p>
-
----
-
-# 🏢 Departments Included
-
-| Department | Components |
-|------------|-------------|
-| 💻 Computer Department | PCs, Printer, Switch |
-| 🛠️ IT Department | PCs, Laptops, Printer |
-| 👨‍💼 Chairman's Department | PCs, TV, Switch |
-| 🖥️ Server Room | Server, PCs, Laptop |
-| 🛋️ Lounge Area | Smart Devices & PCs |
-| 🏢 Reception | Central Office Area |
+| Department | Devices |
+|---|---|
+| Computer Department | PCs, Printer, Switch |
+| IT Department | PCs, Laptops, Printer |
+| Chairman's Office | PCs, TV, Switch |
+| Server Room | Server, PCs, Laptop |
+| Lounge | Smart devices, PCs |
+| Reception | Central office area |
 
 ---
 
-# ⚙️ Features
+## How it's structured
 
-✅ Enterprise-level network topology  
-✅ Multi-department LAN architecture  
-✅ Router & switch connectivity  
-✅ Centralized communication system  
-✅ Server room integration  
-✅ Shared resource access  
-✅ ICMP packet simulation  
-✅ Real-time communication testing  
-✅ Structured office infrastructure design  
-✅ Scalable network architecture  
+```
+Cisco Packet Tracer
+├── Routers         — inter-department routing
+├── Switches        — per-department LAN
+├── End devices     — PCs, laptops, printers, servers
+└── Server room     — centralized resource access
+```
+
+IP addressing is manually configured across all devices. Communication is verified end-to-end using ICMP (ping) simulation.
 
 ---
 
-# 🛠️ Technologies Used
+## Key concepts covered
 
-```yaml
-Simulation Tool : Cisco Packet Tracer
-Networking      : Routing & Switching
-Architecture    : Enterprise LAN
-Concepts        : IP Addressing, Packet Simulation
-Devices         : Routers, Switches, PCs, Servers
+- Router and switch configuration from scratch
+- Department-level network segmentation
+- IP addressing across multiple subnets
+- Packet flow tracing and real-time simulation mode
+- Centralized server connectivity
+- Enterprise infrastructure planning
+
+---
+
+## What's next
+
+A few things I want to add when I revisit this:
+
+- VLAN segmentation per department
+- DHCP server for dynamic addressing
+- ACL rules for inter-department access control
+- Firewall and basic IDS integration
+- Wireless access points for the lounge area
+
+---
+
+## Files
+
+```
+├── Enterprise-Network.pkt   — Packet Tracer project file
+├── topology.png             — network diagram
+└── README.md
 ```
 
 ---
 
-# 📡 Networking Concepts Demonstrated
-
-```bash
-✔ Router Configuration
-✔ Switch Configuration
-✔ End-to-End Communication
-✔ Department Segmentation
-✔ Packet Flow Simulation
-✔ Server Connectivity
-✔ Enterprise Infrastructure Planning
-✔ Real-Time Packet Testing
-```
-
----
-
-# 🚀 Future Improvements
-
-- VLAN Implementation
-- DHCP Configuration
-- Firewall Integration
-- ACL Security Rules
-- Wireless Security
-- IDS/IPS Integration
-- Network Monitoring Dashboard
-
----
-
-# 📂 Repository Structure
-
-```bash
-📦 Enterprise-Network-Infrastructure-Simulation
- ┣ 📜 PES1UG23CS063.pkt
- ┣ 🖼️ topology.png
- ┗ 📄 README.md
-```
-
----
-
-# 🎯 Objective
-
-The goal of this project is to simulate a realistic enterprise office network infrastructure while demonstrating practical networking concepts used in modern organizations.
-
----
-
-# 👨‍💻 Author
-
-### Developed using Cisco Packet Tracer for networking and infrastructure simulation.
-
----
-
-<div align="center">
-
-⭐ If you liked this project, consider giving it a star!
-
-</div>
+*Built as part of learning enterprise networking fundamentals. Open the `.pkt` file in Cisco Packet Tracer to explore or modify the topology.*
