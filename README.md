@@ -3,6 +3,15 @@
 A structured LAN simulation of a real-world office environment, built in **Cisco Packet Tracer**. The goal was to model how departments in an actual organization are segmented, connected, and made to communicate — not just get packets from A to B.
 
 <div align="center">
+
+![Cisco](https://img.shields.io/badge/Cisco-Packet%20Tracer-blue?style=for-the-badge&logo=cisco)
+![Networking](https://img.shields.io/badge/Enterprise-Network-green?style=for-the-badge)
+![Status](https://img.shields.io/badge/Project-Completed-success?style=for-the-badge)
+![Cybersecurity](https://img.shields.io/badge/Cybersecurity-Networking-red?style=for-the-badge)
+
+</div>
+
+<div align="center">
   <img src="topology.png" width="900" alt="Network Topology" />
   <br/>
   <sub>Full network topology — designed and tested in Cisco Packet Tracer</sub>
